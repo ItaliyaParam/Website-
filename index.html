@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Param — Web Developer Portfolio">
+<title>Param | Web Developer</title>
+<style>
+:root{--bg:#070b14;--card:#0d1422;--text:#f5f7fb;--muted:#9aa8bc;--accent:#55e6ff;--accent2:#7c5cff;--line:#1b2a40}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:radial-gradient(circle at 80% 10%,#17205a 0,transparent 32%),var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}.container{width:min(1100px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:rgba(7,11,20,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:22px;font-weight:800}.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:28px;color:#c4cede;font-size:14px}.navlinks a:hover{color:var(--accent)}
+.hero{min-height:calc(100vh - 70px);display:grid;place-items:center;padding:80px 0}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+.badge{display:inline-block;padding:7px 13px;border:1px solid #24435a;border-radius:30px;color:var(--accent);background:#0a1723;margin-bottom:22px;font-size:13px}
+h1{font-size:clamp(46px,7vw,78px);line-height:1.02;letter-spacing:-3px}
+.gradient{background:linear-gradient(90deg,var(--accent),#fff,var(--accent2));-webkit-background-clip:text;color:transparent}
+.hero p{color:var(--muted);max-width:600px;margin:24px 0;font-size:18px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}.btn{padding:12px 20px;border-radius:10px;border:1px solid var(--line);font-weight:700}
+.primary{background:linear-gradient(90deg,var(--accent),#7cdbff);color:#061018;border:0}.secondary{background:#0d1422}
+.codebox{background:linear-gradient(145deg,#101a2d,#090f1b);border:1px solid #20324b;border-radius:20px;padding:24px;box-shadow:0 20px 70px rgba(0,0,0,.35)}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#55e6ff;margin-right:7px}.code{font-family:monospace;color:#b9c7da;font-size:14px}.key{color:#7cdbff}.str{color:#b9f6a5}.purple{color:#bba8ff}
+section{padding:95px 0}.section-title{font-size:38px;margin-bottom:12px}.section-sub{color:var(--muted);margin-bottom:35px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:rgba(13,20,34,.8);border:1px solid var(--line);border-radius:16px;padding:25px;transition:.25s}.card:hover{transform:translateY(-5px);border-color:#31547a}
+.icon{font-size:27px;margin-bottom:12px}.card h3{margin-bottom:8px}.card p{color:var(--muted);font-size:14px}
+.skills{display:flex;flex-wrap:wrap;gap:12px}.skill{padding:10px 15px;border:1px solid var(--line);border-radius:10px;background:#0c1421;color:#d8e1ed}
+.contact{border:1px solid var(--line);border-radius:20px;padding:40px;background:linear-gradient(135deg,#0d1727,#0b1020);text-align:center}.contact p{color:var(--muted);margin:12px auto 24px;max-width:600px}
+footer{padding:28px 0;border-top:1px solid var(--line);color:#718198;text-align:center;font-size:13px}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.codebox{display:none}.cards{grid-template-columns:1fr}.navlinks{display:none}h1{letter-spacing:-2px}}
+</style>
+</head>
+<body>
+<nav><div class="container nav"><div class="logo">PARAM<span>.</span></div><div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero"><div class="container hero-grid">
+<div>
+<div class="badge">● Available for new projects</div>
+<h1>Hi, I'm <span class="gradient">Param.</span><br>Web Developer.</h1>
+<p>I create modern, responsive and clean websites with a focus on great design, smooth user experience and performance.</p>
+<div class="btns"><a class="btn primary" href="#projects">View My Work</a><a class="btn secondary" href="#contact">Let's Connect</a></div>
+</div>
+<div class="codebox"><div><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><br>
+<div class="code"><span class="purple">const</span> developer = {<br>
+&nbsp;&nbsp;<span class="key">name</span>: <span class="str">"Param"</span>,<br>
+&nbsp;&nbsp;<span class="key">role</span>: <span class="str">"Web Developer"</span>,<br>
+&nbsp;&nbsp;<span class="key">design</span>: <span class="str">"Modern"</span>,<br>
+&nbsp;&nbsp;<span class="key">responsive</span>: <span class="str">true</span>,<br>
+&nbsp;&nbsp;<span class="key">passion</span>: <span class="str">"Building for the web"</span><br>
+};</div></div>
+</div></header>
+
+<section id="about"><div class="container"><h2 class="section-title">About Me</h2><p class="section-sub">A young developer focused on turning ideas into polished digital experiences.</p><div class="cards"><div class="card"><div class="icon">⚡</div><h3>Fast & Clean</h3><p>Lightweight layouts designed to feel quick and smooth.</p></div><div class="card"><div class="icon">📱</div><h3>Responsive</h3><p>Websites that look great across phones, tablets and computers.</p></div><div class="card"><div class="icon">✨</div><h3>Modern UI</h3><p>Professional interfaces with clean spacing, typography and visual details.</p></div></div></div></section>
+
+<section id="skills"><div class="container"><h2 class="section-title">Skills</h2><p class="section-sub">Technologies and areas I work with.</p><div class="skills"><span class="skill">HTML5</span><span class="skill">CSS3</span><span class="skill">JavaScript</span><span class="skill">Responsive Design</span><span class="skill">UI Design</span><span class="skill">Website Development</span></div></div></section>
+
+<section id="projects"><div class="container"><h2 class="section-title">Featured Projects</h2><p class="section-sub">Some projects from my development journey.</p><div class="cards"><div class="card"><div class="icon">🌐</div><h3>Business Website</h3><p>A premium responsive website concept for a local business.</p></div><div class="card"><div class="icon">🛍️</div><h3>Online Store</h3><p>A clean product-focused e-commerce interface concept.</p></div><div class="card"><div class="icon">💻</div><h3>Developer Portfolio</h3><p>This portfolio — designed to showcase my skills and work.</p></div></div></div></section>
+
+<section id="contact"><div class="container"><div class="contact"><h2 class="section-title">Let's Build Something Great</h2><p>Have an idea for a website? I'm always excited to turn creative ideas into modern web experiences.</p><a class="btn primary" href="mailto:your@email.com">Contact Me</a></div></div></section>
+<footer>© 2026 Param. Built with HTML, CSS & JavaScript.</footer>
+</body></html>
